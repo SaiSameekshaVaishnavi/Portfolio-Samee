@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sameeksha</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.und.js"></script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="navig">
+            <a href="#" class="logo">Sameeksha</a>
+            <nav class="navbara">
+                <a href="" style="--i:1" class="active">Home</a>
+                <a href="" style="--i:2">About</a>
+                <a href="" style="--i:3">Skills</a>
+                <a href="" style="--i:4">Projects</a>
+                <a href="" style="--i:5">Contact</a>
+
+            </nav>
+
+        </header>
+
+
+        <section id="home" class="home">
+            <div class="home-content">
+                <h1>Welcome to Sameeksha's Portfolio!</h1>
+                <h2>I'm a <span class="text"></span></h2>
+                <h4>I'm a Passionate Web Developer</h4>
+                <div class="button" data-tooltip="Size: 20Mb">
+                    <div class="button-wrapper">
+                      <div class="texta">Download CV</div>
+                        <span class="icon">
+                            <a href="./Neurobootcamp2.pptx" download="Neurobootcamp2.pptx"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg></a>
+                        </span>
+                      </div>
+                    </div>  
+                </div>    
+            </div>
+            <!--<div class="home-img">
+                <img src="./samee.png" alt="samee">
+            </div>-->
+        </section>
+<!--About Page-->
+        <section id="abt">
+        <div class="about d-flex justify-content-between flex-wrap">
+            <div class="about-img">
+                <img src="./samee_jee_pic.jpg" alt="samee">
+            </div>
+            <div class="about-text">
+                <h2 class="st">About <span style="color: #0ef; text-align: center;">Me</span></h2>
+                <p>My Name is Sameeksha and I am an aspiring web developer from India. with an interest in software field</p>
+                <div class="tab-titles">
+                  <div class="tab-links active-link">Experience</div>
+                  <div class="tab-links">Education</div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <div id="connect">
+
+        </div>
+       
+        
+        <script src="" async defer>
+            var typed=new typed(".text",{
+                                 Strings:["Web Developer", "Software Developer", "Frontend Developer"],
+                                 typeSpeed:100,
+                                 backSpeed:100,
+                                 backDelay:1000,
+                                 loop:true
+                               });
+        </script>
+    </body>
+</html>
