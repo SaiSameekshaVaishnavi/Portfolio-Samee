@@ -34,6 +34,7 @@
 .navbar-toggler-icon {
     background-color: white;
     border: none;
+    color: var(--primary-gu-color);
 }
 
 .nav-link {
@@ -266,17 +267,23 @@
 
 /*ABOUT PAGE*/
 
-#abt .circle {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-basis: 35%;
+#abt .circle {    
+    width: 200px;
+    height: 200px;
+    border: 2px soild white;
+    background-color: var(--primary-gu-color);
+    border-radius: 50%;
+    margin-left: 13%;
+    margin-top: 4%;
 }
 
 .about-img img {
-    width: 60%;
+    width:80%;
     height: auto;
     overflow: hidden;
+    margin-top: 11%;
+    margin-left: 10%;
+    object-fit: cover;
 }
 
 .about-text {
@@ -289,14 +296,20 @@
 }
 
 @media only screen and (max-width:600px) {
+    #abt .circle{
+        margin-top: 0;
+        margin-left: 20%;
+    }
     .about-img img {
         flex-basis: 100%;
     }
-
     .about-text {
         flex-basis: 100%;
+       text-align: center;
     }
-
+    .tab-links{
+        margin-left: 6%;
+    }
 }
 
 .about-text .tab-titles {
@@ -405,9 +418,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
 #projects {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 90vh;
 }
 
@@ -499,43 +509,6 @@
     margin-bottom: 5px;
 }
 
-#projects .details h2 {
-    font-weight: 400;
-    font-size: 1em;
-    margin-bottom: 10px;
-    opacity: .6;
-}
-
-#projects .details .rating {
-    position: relative;
-    margin-bottom: 15px;
-    display: flex;
-    gap: .25em;
-}
-
-#projects .details .rating i {
-    color: var(--primary-gu-color);
-}
-
-#projects .details .rating span {
-    margin-left: 0.25em;
-}
-
-#projects .details .tags {
-    display: flex;
-    gap: .375em;
-    margin-bottom: .875em;
-    font-size: .85em;
-}
-
-#projects .details .tags span {
-    padding: .35rem .65rem;
-    color: #fff;
-    border: 1.5px solid rgba(255 255 255 / 0.4);
-    border-radius: 4px;
-    border-radius: 50px;
-}
-
 #projects .details .desc {
     color: #fff;
     opacity: .8;
@@ -561,18 +534,12 @@
     width: 55px;
     height: 55px;
     border-radius: 50%;
-    border: 1.5px solid  var(--primary-gu-color);
+    border: 1.5px solid var(--primary-gu-color);
+    background-color: wheat;
     display: flex;
-    
     align-items: center;
     justify-content: center;
 }
-
-/*#projects .details .cast ul li img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}*/
 
 
 /*Contact-Section*/

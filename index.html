@@ -7,25 +7,16 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        rel="stylesheet"
-      />
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-        <link rel="stylesheet" href="css/animate.css">
-        <link rel="stylesheet" href="css/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl.theme.default.min.css">
-        <link rel="stylesheet" href="css/magnific-popup.css">
-        <link rel="stylesheet" href="css/aos.css">
-        <link rel="stylesheet" href="css/ionicons.min.css">
-        <link rel="stylesheet" href="css/flaticon.css">
-        <link rel="stylesheet" href="css/icomoon.css">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </head>
+
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+      <!--Nav Bar-->   
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
             <div class="container">
               <a class="navbar-brand" href="./index.html" style="color:#FFD700; font-size:  1.5rem; font-weight: 700;">Sameeksha</a>
               <button
@@ -61,7 +52,7 @@
             </div>
           </nav>
 
-
+        <!--Home Section-->
         <section id="home" class="home">
             <div class="home-content">
                 <h1>Welcome to <span class="colu-gu">Sameeksha's</span> Portfolio!</h1>
@@ -114,6 +105,7 @@
         </div>
 </section>
 
+<!--Skills Section-->
 <section id="page-skills">
             <h1 class="st">Skills</h1>
              <div class="container1" id="skls">
@@ -188,9 +180,7 @@
                     aria-valuemin="0"
                     aria-valuemax="100"
                   ></div>
-                </div>
-          
-                
+                </div>      
          </div>
     </div>
 </section>
@@ -200,8 +190,8 @@
 <h1 class="st"><span class="colu-gu">My</span> Projects</h1>
 <section id="projects">
     <div class="wrapper">
-        <div class="card" style="background-color:gray;">
-            <div class="poster"><span style="text-align: center;">Web Development</span></div>
+        <div class="card">
+            <div class="poster"><img src="./Portfolio.jpg" alt="Portfolio"></div>
             <div class="details">
                 <h1>Portfolio</h1>
                 <p class="desc">
@@ -223,7 +213,7 @@
             </div>
         </div>
         <div class="card" style="background-color:gray;">
-          <div class="poster"><span style="text-align: center;">Machine Learning</span></div>
+          <div class="poster"><img src="./MachineLearning.jpg" alt="Housing Price Detection"></div>
           <div class="details">
               <h1>Housing Price Detection</h1>
               <p class="desc">
@@ -244,7 +234,7 @@
           </div>
       </div>
       <div class="card" style="background-color:gray;">
-        <div class="poster"><span style="text-align: center;">Web Development</span></div>
+        <div class="poster"><img src="./Sanchar.jpg" alt="Sanchar"></div>
         <div class="details">
             <h1>Sanchar</h1>
             <p class="desc">
@@ -266,7 +256,7 @@
     </div>
       
         <div class="card">
-            <div class="poster"><img src="https://i.postimg.cc/GtxLYS7q/poster2-img.jpg" alt="Location Unknown"></div>
+            <div class="poster"><img src="./CampusAmbassdor.jpg" alt="Campus Ambassdor"></div>
             <div class="details">
                 <h1>Campus-Ambassdor</h1>
                 <p class="desc">
@@ -286,7 +276,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="poster"><img src="https://i.postimg.cc/yxH6DzPD/poster3-img.jpg" alt="Location Unknown"></div>
+            <div class="poster"><img src="./TourismManagement.jpg" alt="Tourism Management"></div>
             <div class="details">
                 <h1>Tourism-Management</h1>
                 <p class="desc">
@@ -347,7 +337,6 @@
         </div> 
                 <p><a href="./Sameeksha_22EC01021.pdf">Download Resume</a></p>
         </div>      
-  
 </div>
 
             <!--Social Media Icons-->
@@ -380,7 +369,7 @@
 
 
        <script async defer >
-        console.log("wht is fuck");
+        //for home page
            var typed=new Typed(".text",{
                                  strings:["Machine Learning Engineer", "Software Developer", "Frontend Developer"],
                                  typeSpeed:100,
@@ -388,6 +377,8 @@
                                  backDelay:900,
                                  loop:true
                                });
+
+        //for about page          
             var tablinks=document.getElementsByClassName("tab-links");
             var tabcontents=document.getElementsByClassName("tab-contents");
             function opentab(event, tabname)
@@ -404,10 +395,10 @@
             document.getElementById(tabname).classList.add("active-tab");
             }
            
+            //for nav-bar
             document.addEventListener('DOMContentLoaded', function() {
             const sections = document.querySelectorAll('section');
             const navLinks = document.querySelectorAll('.nav-link');
-
             const observer = new IntersectionObserver(entries => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
@@ -420,30 +411,28 @@
                     }
                 });
             }, { threshold: 0.6 });
-
             sections.forEach(section => {
                 observer.observe(section);
             });
         });
-        document.addEventListener('DOMContentLoaded', function () {
+
+      // for skills section 
+      document.addEventListener('DOMContentLoaded', function () {
     const section = document.getElementById('page-skills');
     const progressBars = document.querySelectorAll('.progress-bar');
-
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 progressBars.forEach(bar => {
                     bar.style.width = bar.getAttribute('data-width');
                 });
-                observer.disconnect(); // Stops observing after animation
+                observer.disconnect(); 
             }
         });
     }, { threshold: 0.5 });
-
     observer.observe(section);
 });
-
-        </script> 
+</script> 
 
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
