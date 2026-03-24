@@ -6,10 +6,10 @@
         <title>Sameeksha</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
         <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     </head>
@@ -33,44 +33,48 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                   <li class="nav-item" >
-                    <a class="nav-link" style="color: white"  href="#home">Home</a>
+                    <a class="nav-link" href="#home">Home</a>
                   </li>
                   <li class="nav-item" >
-                    <a class="nav-link" style="color: white"  href="#abt">About</a>
+                    <a class="nav-link" href="#abt">About</a>
                   </li>
                   <li class="nav-item"  >
-                    <a class="nav-link" style="color: white"  href="#page-skills">Skills</a>
+                    <a class="nav-link" href="#page-skills">Skills</a>
                   </li>
                   <li class="nav-item" >
-                    <a class="nav-link" style="color: white"  href="#my-projects">Projects</a>
+                    <a class="nav-link" href="#my-projects">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements</a>
                   </li>
                   <li class="nav-item" >
-                    <a class="nav-link"  style="color: white" href="#contacts">Contact</a>
+                    <a class="nav-link" href="#contacts">Contact</a>
                   </li>
+
                 </ul>
               </div>
             </div>
           </nav>
 
-        <!--Home Section-->
-        <section id="home" class="home">
-            <div class="home-content">
-                <h1>Welcome to <span class="colu-gu">Sameeksha's</span> Portfolio!</h1>
-                <h2>I'm a <span class="colu-gu text"></span></h2>
-                <div class="button" data-tooltip="Size: 20Mb">
-                    <div class="button-wrapper">
-                      <div class="texta">Download CV</div>
-                        <span class="icon">
-                            <a href="./Sameeksha_22EC01021.pdf" download="Sameeksha_22EC01021"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg></a>
-                        </span>
-                      </div>
-                    </div>  
-                </div>    
-            </div>
-            <!--<div class="home-img">
-                <img src="./Samee.jpg" alt="samee">
-            </div>-->
-        </section>
+<!--Home Section-->
+<section id="home" class="home">
+  <div class="home-content">
+      <h1>Hi, I'm <span class="colu-gu">Sameeksha Vaishnavi</span></h1>
+      <h2>Software Engineer | MERN | LLM Apps</h2>
+      <h3 class="typing">I build scalable full-stack applications & AI-powered systems.</h3>
+
+      <div class="button" data-tooltip="Size: 20Mb">
+          <div class="button-wrapper">
+              <div class="texta">Download CV</div>
+                  <span class="icon">
+                      <a href="./22EC01021_Samee_Resume.pdf" download="Sameeksha_22EC01021"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="2em" height="2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 0 0 4.561 21h14.878a2 2 0 0 0 1.94-1.515L22 17"></path></svg></a>
+                  </span>
+              </div>
+          </div>  
+      </div>    
+  </div>
+</section>
+
 
 <!--About Page-->
 <section id="abt">
@@ -82,23 +86,35 @@
          </div>
          <div class="about-text">
                 <h2 class="st rds">About <span class="colu-gu">Me</span></h2>
-                <p class="rds" style="font-size: 25px;">I'm deeply passionate about technology and innovation, with proficiency in machine learning, web development, and data structures and algorithms (DSA).</p>
+                <p class="rds" style="font-size: 22px;">
+    IIT Bhubaneswar student passionate about building scalable full-stack systems,
+    AI applications (LangChain, RAG, Pinecone), and secure backend architecture.
+    I worked as a Software Engineering Intern at Atlassian working with React,
+    TypeScript, and large-scale product systems.
+</p>
+
                 <div class="tab-titles rds">
                   <div style="font-size: 24px;" class="tab-links active-link" onclick="opentab(event,'skills')">Experience</div>
                   <div style="font-size: 24px;" class="tab-links" onclick="opentab(event,'edu')">Education</div>
                 </div>
-                    <div class=" tab-contents active-tab" id="skills">
-                        <ul class="rds" style="font-size: 21px;">
-                            <li ><span>Machine Learning</span><br> Develop models using ML</li>
-                            <li ><span>DSA</span><br> DSA in C++</li>
-                            <li ><span>Front-End</span><br>Front-end developer</li>
-                        </ul>
-                    </div>
+                   <div class="tab-contents active-tab" id="skills">
+    <ul class="rds" style="font-size: 21px;">
+        <li><span>Software Engineering Intern | Atlassian (May 2025 - July 2025)</span><br>
+        Built and deployed customer-facing features, improved delivery by 15%, reduced defects by 20%.</li>
+
+        <li><span>Chief Editor | Oracle, IIT Bhubaneswar (July 2025 - Present)</span><br>
+        Spearheading team to publish reports on high-impact events for a student community of 1,500+.</li>
+
+        <li><span>Core Head | Wissenaire IIT BBS (Mar 2024 - Mar 2025)</span><br>
+        Directed development of multiple fest websites, serving 500+ users.</li>
+    </ul>
+</div>
+
                     <div class=" tab-contents" id="edu">
                         <ul class="rds"  style="font-size: 21px;">
-                            <li><span>2026</span><br>Bachelor of Technology in Electronics and Communication Engineering from Indian Institute of Technology(IIT) Bhubaneswar(8.35) </li>
-                            <li><span>2022</span><br> 10+2 from Sri Chaitanya Techno School(95.8%)</li>
-                            <li><span>2020</span><br>10 from Suresh High School(99.8%)</li>
+                            <li><span>Nov 2022 - Present</span><br>B.Tech in Electronics and Communication Engineering, IIT Bhubaneswar (CGPA: 8.25)</li>
+                            <li><span>Aug 2020 - Aug 2022</span><br>10+2 from Sri Chaitanya Techno School, Visakhapatnam (95.8%)</li>
+                            <li><span>2020</span><br>10th from Suresh High School (99.8%)</li>
                         </ul>
                     </div>
             </div>
@@ -107,89 +123,107 @@
 
 <!--Skills Section-->
 <section id="page-skills">
-            <h1 class="st uds">Skills</h1>
-             <div class="container1" id="skls">
-               <div class="skill-mf">
-                <span>C++</span> <span class="pull-right">95%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="95%"
-                    aria-valuenow="95"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-          
-                <span>Java Script</span> <span class="pull-right">75%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="75%"
-                    aria-valuenow="75"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
+  <h1 class="st uds">Technical Skills</h1>
 
-                <span>Python</span> <span class="pull-right">65%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="65%"
-                    aria-valuenow="65"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-          
-                <span>React JS, Express JS</span> <span class="pull-right">70%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="70%"
-                    aria-valuenow="70"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-          
-                <span>Machine Learning</span> <span class="pull-right">60%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="60%"
-                    aria-valuenow="60"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-
-                <span>DSA</span>  <span class="pull-right">85%</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    data-width="85%"
-                    aria-valuenow="85"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>      
-         </div>
-    </div>
+  <div class="skills-grid">
+      <div class="skill-category">
+          <h3>Languages</h3>
+          <p>C, C++, Python, JavaScript</p>
+      </div>
+      <div class="skill-category">
+          <h3>Frontend</h3>
+          <p>React.js, Typescript, Tailwind CSS, Bootstrap, Jest</p>
+      </div>
+      <div class="skill-category">
+          <h3>Backend</h3>
+          <p>Node.js, Express.js, FastAPI, REST APIs, JWT, bcrypt</p>
+      </div>
+      <div class="skill-category">
+          <h3>AI / Tools</h3>
+          <p>LangChain, LangGraph, Gemini, Git, Postman</p>
+      </div>
+      <div class="skill-category">
+          <h3>Databases</h3>
+          <p>MongoDB, Pinecone, SQL</p>
+      </div>
+      <div class="skill-category">
+          <h3>Core CS</h3>
+          <p>OOPS, OS, DBMS, Intro to ML, CN & Security</p>
+      </div>
+  </div>
 </section>
+
     
 <!--Projects Page-->
 <section id="my-projects">
 <h1 class="st uds"><span class="colu-gu">My</span> Projects</h1>
 <section id="projects">
     <div class="wrapper">
+        <div class="card uds">
+  <div class="poster"><img src="knowledge-ai.jpeg" alt="Knowledge AI Assistant"></div>
+  <div class="details">
+      <h1>Knowledge AI Assistant</h1>
+      <p class="desc">
+        AI-powered document assistant using LangChain + FastAPI + Pinecone.
+        Built a complete RAG pipeline enabling semantic search & context-aware retrieval.
+      </p>
+      <div class="cast">
+          <h3>Links</h3>
+                    <ul>
+                        <li><a href="https://github.com/SaiSameekshaVaishnavi/KnowledgeAI"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a>
+                        </li>
+                    </ul>
+      </div>
+  </div>
+</div>
+
+<div class="card uds">
+  <div class="poster"><img src="wallet.jpeg" alt="Secure Wallet"></div>
+  <div class="details">
+      <h1>Secure Wallet (MERN)</h1>
+      <p class="desc">
+        Full-stack wallet with JWT auth, MongoDB transactions & idempotency keys.
+        Designed for financial-grade reliability & role-based access.
+      </p>
+      <div class="cast">
+          <h3>Links</h3>
+                    <ul>
+                        <li><a href=" https://github.com/SaiSameekshaVaishnavi/SecretWallet"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a>
+                        </li>
+                    </ul>
+      </div>
+  </div>
+</div>
+
+<div class="card uds">
+  <div class="poster"><img src="ale-company.jpeg" alt="ALE Company Portal"></div>
+  <div class="details">
+      <h1>ALE Company Portal</h1>
+      <p class="desc">
+        Role-based MERN portal with JWT authentication, CRUD workflows for users and departments,
+        and secure access-control for Admin/Manager/User operations. Features REST APIs, reactive UI,
+        and deployment-ready environment configuration.
+      </p>
+      <div class="cast">
+          <ul>
+              <li><a href="https://github.com/SaiSameekshaVaishnavi/ALECompany"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a>
+                        </li>
+                        <li><a href="https://ale-company.vercel.app/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                          <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                        </svg></a>
+                        </li>
+          </ul>
+      </div>
+  </div>
+</div>
+
+ 
         <div class="card uds">
             <div class="poster"><img src="./Portfolio.jpg" alt="Portfolio"></div>
             <div class="details">
@@ -300,6 +334,37 @@
 </section>
 </section>
 
+<section id="achievements">
+  <h1 class="st uds"><span class="colu-gu">Achievements</span></h1>
+  <div class="ach-grid">
+    <div class="ach-card uds">
+      <h2><span class="colu-gu">1712</span></h2>
+      <p>LeetCode Contest Rating</p>
+    </div>
+    <div class="ach-card uds">
+      <h2><span class="colu-gu">500+</span></h2>
+      <p>DSA Problems Solved</p>
+    </div>
+    <div class="ach-card uds">
+      <h2>Top <span class="colu-gu">0.5%</span></h2>
+      <p>JEE Advanced AIR 6884<br>JEE Mains AIR 3100</p>
+    </div>
+    <div class="ach-card uds">
+      <h2><span class="colu-gu">Leadership</span></h2>
+      <p>Core Head at Wissenaire<br>Oracle Chief Editor</p>
+    </div>
+    <div class="ach-card uds">
+      <h2><span class="colu-gu">6+</span></h2>
+      <p>Production Projects</p>
+    </div>
+  </div>
+</section>
+
+<!-- <div style="text-align:center;margin-top:20px;">
+  <img src="https://github-readme-stats.vercel.app/api?username=SaiSameekshaVaishnavi&show_icons=true&theme=tokyonight" width="450"/>
+</div> -->
+
+
 <!--Contacts Page-->
 <section id="contacts">
          <h1 class="st uds">Contact <span class="colu-gu">Me</span></h1>
@@ -335,7 +400,7 @@
               </svg>
              </div>
         </div> 
-                <p><a href="./Sameeksha_22EC01021.pdf">Download Resume</a></p>
+                <p><a href="./22EC01021_Samee_Resume.pdf">Download Resume</a></p>
         </div>      
 </div>
 
@@ -346,8 +411,8 @@
                 <a class="social-link2 uds" href="https://www.linkedin.com/in/sameeksha-vaishnavi-90a2a1260">
                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" fill="#fff"><path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path></svg>
                 </a>
-                <a class="social-link3 uds" href="https://www.facebook.com/sameeksha.vaishnavi?mibextid=ZbWKwL">
-                   <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" fill="#fff"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"></path></svg>
+                <a class="social-link3 uds" href="https://github.com/SaiSameekshaVaishnavi">
+                   <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="#fff" class="bi bi-github" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/></svg>
                 </a>
                 <a class="social-link4 uds" href="mailto: vaishnavi20082005@gmail.com">
                       <svg xmlns="http://www.w3.org/2000/svg"  height="1em" fill="#fff" viewBox="0 0 16 16">
@@ -370,13 +435,13 @@
 
        <script async defer >
         //for home page
-           var typed=new Typed(".text",{
-                                 strings:["Machine Learning Engineer", "Software Developer", "Frontend Developer"],
-                                 typeSpeed:100,
-                                 backSpeed:100,
-                                 backDelay:900,
-                                 loop:true
-                               });
+        new Typed(".typing",{
+    strings:["Full Stack Developer","React + Node.js","AI/RAG Developer","SWE Intern at Atlassian 2025"],
+    typeSpeed:70,
+    backSpeed:60,
+    loop:true
+})
+
 
         //for about page          
             var tablinks=document.getElementsByClassName("tab-links");
@@ -416,11 +481,11 @@
             });
         });
 
-      // for skills section 
-      document.addEventListener('DOMContentLoaded', function () {
-    const section = document.getElementById('page-skills');
-    const progressBars = document.querySelectorAll('.progress-bar');
-    const observer = new IntersectionObserver((entries, observer) => {
+   // for skills section 
+document.addEventListener('DOMContentLoaded', function () {
+  const section = document.getElementById('page-skills');
+  const progressBars = document.querySelectorAll('.progress-bar');
+  const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 progressBars.forEach(bar => {
@@ -448,8 +513,8 @@ document.addEventListener('DOMContentLoaded', function () {
             moves.forEach(move => {
                 observer.observe(move);
             });
-        });
-        document.addEventListener('DOMContentLoaded', function () {
+});
+document.addEventListener('DOMContentLoaded', function () {
             const moves = document.querySelectorAll('.rds');
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach((entry) => {
@@ -464,7 +529,7 @@ document.addEventListener('DOMContentLoaded', function () {
             moves.forEach(move => {
                 observer.observe(move);
             });
-        });
+});
 
 </script> 
 

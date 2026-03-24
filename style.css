@@ -1,9 +1,22 @@
+:root {
+    --primary-gu-color: #FFD700;
+    --bg-dark: #0f172a;
+    --bg-card: #1e293b;
+    --text-primary: #ffffff;
+    --card-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    --primary-gu-color: #FFD700;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-color: var(--bg-dark);
+    color: var(--text-primary);
 }
 
 /*standard declarations*/
@@ -13,8 +26,8 @@
 #contacts,
 .home {
     padding: 38px 0;
-    background-color: #000;
-    color: white;
+    background-color: transparent;
+    color: var(--text-primary);
     width: auto;
 }
 
@@ -31,6 +44,12 @@
 
 
 /*Nav Bar*/
+.navbar.bg-dark {
+    background: rgba(15, 23, 42, 0.9) !important;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 
@@ -40,6 +59,7 @@
 
 .nav-link {
     font-size: 1.2em;
+    color: var(--text-primary) !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -52,7 +72,6 @@
 }
 
 
-/*Home page*/
 .home {
     position: relative;
     width: 100%;
@@ -62,7 +81,7 @@
     justify-content: space-between;
     height: 90vh;
     padding: 90px 10% 0;
-    color: #fff;
+    color: var(--text-primary);
 }
 
 .home-content h1 {
@@ -151,7 +170,7 @@
     --tooltip-width: 90px;
     --gap-between-tooltip-to-button: 18px;
     --button-color: var(--primary-gu-color);
-    --tooltip-color: white;
+    --tooltip-color: #333;
     width: var(--width);
     height: var(--height);
     background: var(--button-color);
@@ -173,7 +192,7 @@
     height: var(--tooltip-height);
     background-color: var(--primary-gu-color);
     font-size: 0.9rem;
-    color: black;
+    color: var(--text-primary);
     border-radius: .25em;
     line-height: var(--tooltip-height);
     bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
@@ -239,7 +258,7 @@
 }
 
 .button:hover {
-    background: white;
+    background: #121212;
 }
 
 .button:hover .texta {
@@ -447,10 +466,10 @@
     position: relative;
     width: 325px;
     height: 450px;
-    background: #000;
+    background: var(--bg-card);
     border-radius: 18px;
     overflow: hidden;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    box-shadow: var(--card-shadow);
 }
 
 #projects .poster {
@@ -498,10 +517,10 @@
     width: 100%;
     height: auto;
     padding: 1.5em 1.5em 2em;
-    background: #000a;
+    background: rgba(15, 23, 42, 0.85);
     backdrop-filter: blur(16px) saturate(120%);
     transition: .3s;
-    color: #fff;
+    color: var(--text-primary);
     z-index: 2;
 }
 
@@ -520,7 +539,7 @@
 }
 
 #projects .details .desc {
-    color: #fff;
+    color: var(--text-primary);
     opacity: .8;
     line-height: 1.5;
     margin-bottom: 1em;
@@ -561,7 +580,7 @@
 
 #contacts a {
     text-decoration: none;
-    color: white;
+    color: var(--text-primary);
 }
 
 #contacts .ani {
@@ -585,7 +604,7 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    background-color: gray;
+    background-color: var(--bg-card);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -617,9 +636,9 @@
     transition: 0.25s;
     width: 60px;
     height: 60px;
-    border: 1px solid #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    background-color: lightseagreen;
+    background-color: var(--bg-card);
     position: relative;
     display: flex;
     align-items: center;
@@ -636,7 +655,7 @@
 }
 
 #contacts .carda .social-link3:hover {
-    background-color: #0059f7;
+    background-color: #333;
     animation: bounce_613 0.4s linear;
 }
 
@@ -661,4 +680,71 @@
     100% {
         transform: scale(1);
     }
+}
+
+
+.skills-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 20px;
+}
+
+.skill-category {
+    background: var(--bg-card);
+    padding: 20px;
+    border-left: 4px solid var(--primary-gu-color);
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skill-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 0 15px rgba(255, 215, 0, 0.2);
+}
+
+.skill-category h3 {
+    margin-bottom: 10px;
+    color: var(--primary-gu-color);
+}
+
+#achievements {
+  background: transparent;
+  color: var(--text-primary);
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.ach-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.ach-card {
+    background: var(--bg-card);
+    padding: 30px 20px;
+    border-radius: 12px;
+    width: 250px;
+    box-shadow: var(--card-shadow);
+    transition: transform 0.3s ease;
+    border-bottom: 3px solid var(--primary-gu-color);
+}
+
+.ach-card:hover {
+    transform: translateY(-5px);
+}
+
+.ach-card h2 {
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.ach-card p {
+    font-size: 1.1em;
+    color: var(--text-primary);
+    opacity: 0.9;
 }
